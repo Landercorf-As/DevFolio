@@ -1,0 +1,314 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Signika+Negative&display=swap');
+
+
+:root { /*Es una plantilla de colores de elementos, donde se definen las variables de estilo*/
+    --fc-text:        #181817;
+    --fc-ops-border: #a0a0a0;
+    --fc-muted:       #e91708;
+    --fc-input-bg:    #fafafa;
+    --fc-input-focus: #f5f4f2;
+    --fc-btn-bg:      #c2c2bd;
+    --fc-btn-text:    #faefd6;
+    --fc-btn-ghost-bg:#faefd6;
+    --fc-st-bg:       #fcfcfc;
+    --fc-brp-bg:      #0e2c23e5;
+    --fc-sign-bg:     #db580c;
+    --border:     #e2e2e2;
+    --fc-prs-bg: #c8da9e;
+    --fc-font-body:   "Karla", sans-serif;
+    --fc-border-radius:         6px;
+}
+
+
+body {
+    font-family: var(--fc-font-body);
+    background-color: var(--fc-input-bg);
+    margin: 10px;
+    padding: 40px;
+    border: 1px solid var(--fc-muted);
+    width: 100vw;   /* 100% del ancho de la ventana */
+    height: 100vh;  /* 100% del alto de la ventana */
+    display: flex;
+}
+
+.form-card-styles { /* Estilos para el formulario de registro */
+    z-index: 1;
+    background: var(--fc-st-bg);
+    border: 1px solid var(--fc-border);
+    border-radius: var(--fc-border-radius);
+    width: 100%;
+    max-width: var(--fc-width);
+    padding: 9rem;
+    flex-direction: column;
+    vertical-align: middle;
+    margin-top: 10%;
+    margin-bottom: 10;
+    display: flex;
+    gap: var(--fc-gap);
+}
+
+.form-card-label {
+    display: flex; /* Asegura que el * este ajustado en su lugar destinatorio */
+    padding: 0.234rem;
+}
+
+.required::after {
+    content: "*";
+    color: var(--fc-muted);
+    position: relative;
+    border-radius: 1rem;
+    border-color: var(--fc-muted);
+    padding: 0.25rem;
+    vertical-align: middle;
+}
+
+.panel-right {
+    flex: 1;              /* ocupa el resto del ancho*/
+    flex: 0.8;  /* ~60% de la pantalla, como en la imagen*/
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.126rem;
+}
+.panel-right {
+    border: #fc5c00 solid 1px;
+    background: var(--fc-brp-bg);
+    /*
+    background-image:
+    radial-gradient(circle at 20% 80%, rgba(204, 1, 1, 0.04) 9%, transparent 30% ), /* Modificado para un rojo más intenso 
+    radial-gradient(circle at 80% 20%, rgba(243, 0, 0, 0.03) 9%, transparent 30% ),
+    radial-gradient(circle at 50% 50%, rgba(255, 0, 0, 0.02) 9%, transparent 30% );
+    */
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 560px;       /* ancho máximo del formulario*/
+}
+
+
+.panel-left {
+    border: #000000 solid 1px;
+
+}
+.panel-left {
+    flex: 1;                /* ocupa el resto del ancho */
+    min-height: 100vh;
+    background: var(--fc-st-bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.panel-left::before {
+    flex: 0.8;  /* ~60% de la pantalla, como en la imagen */
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    /*
+    background-image:
+        radial-gradient(circle at 20% 80%, rgba(204, 1, 1, 0.04) 9%, transparent 30% ), /* Modificado para un rojo más intenso 
+        radial-gradient(circle at 80% 20%, rgba(243, 0, 0, 0.03) 9%, transparent 30% ),
+        radial-gradient(circle at 50% 50%, rgba(255, 0, 0, 0.02) 9%, transparent 30% );
+        */
+}
+.form-card-molder {
+    display: block;
+    flex-direction: none;
+    gap: 5rem;
+    padding: 0.2312rem;
+    margin: 20px 0 10px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    width: 100%;/* width: 1%; <--- Esto rompe todo el loyout en cuanto al ancho de la pagina y los elementos esto*/
+    height: 10%;
+    font-size: 16px;
+}
+.move-inputs {
+    padding: 2px 30px; /* manejo del input */
+    border-radius: 0.4rem;
+    width: 540px;
+    padding: 7.5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    position: relative;
+    font-size: 18px;
+    box-sizing: border-box;
+
+}
+.panel-left-content {
+    position: relative;
+    text-align: center;
+}
+.illustration {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2.5rem;
+}
+
+.form-card__seperator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vh;
+    width: 85%;
+    color: grey;
+}
+.form-card__seperator::before,
+.form-card__seperator::after {
+    content: "";
+    flex: 1; /* ocupan todo el espacio disponible */
+    border-top: 1px solid var(--fc-ops-border);
+    margin: 0 1rem;
+}
+
+.form-card__seperator {
+    font-weight: bold;
+    color: var(--fc-text);
+}
+
+.form-card_separator span {
+    margin: 0 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+    .form-card-label {
+        position: relative;
+        border-radius: 1rem;
+        border-color: var(--fc-btn-bg);
+        padding: 0.25rem;
+        width: 100%;
+        height: 23px;
+        display: flex;
+        overflow-clip-margin: 0% border-box;
+        justify-content: centers;
+    }
+
+    /*==Panel derecho==
+    .panel-right {
+        flex: 1;              /* ocupa el resto del ancho
+        flex: 0.8;  /* ~60% de la pantalla, como en la imagen
+        min-height: 50vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+    }
+
+    .form-wrapper {
+        width: 100%;
+        max-width: 460px;       /* ancho máximo del formulario
+    }
+
+*/
+/* ══════════════════════════════════════
+PANEL IZQUIERDO
+══════════════════════════════════════ */
+/*
+    .panel-left {
+        flex: 1;                /* ocupa el resto del ancho 
+        flex: 1; /* ~60% de la pantalla, como en la imagen 
+    min-height: 95vh;
+    background: var(--panel-bg);
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;   /* para posicionar la textura de fondo 
+    }
+
+    .img-container {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    /* Textura sutil de fondo
+    .panel-left::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+    radial-gradient(circle at 20% 80%, rgba(255,255,255,0.04) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(255,255,255,0.03) 0%, transparent 50%);
+    }
+    .illustration {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 2.5rem;
+    }
+*/
+/*
+.divider {
+    width: 100%;
+    border: none;
+    border-top: 1px solid var(--fc-btn-bg);
+}
+.form-card__separator {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.form-card__separator::before,
+.form-card__separator::after {
+    content: "";
+    flex: 1;
+    border-top: 1px solid var(--fc-btn-bg);
+    margin: 0 1rem;
+}
+
+.form-card__separator span:hover {
+    font-weight: bold;
+    color: var(--fc-muted);
+}
+*/
+/*
+.panel-left-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 360px;
+}
+ */
+/* Ilustración SVG de papeles apilados */
+
+/*==Boton de Google==
+.btn-goggle {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    border: 1.5px solid var(--boder);
+    border-radius: 6px;
+    background: var(--border);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--fc-btn-text);
+    cursor: pointer;
+    transition: var(--border 0.15s, box-shadow 0.15s);
+}
+.btn-goggle .svg {
+    width: 20px;
+    height: 20px;
+}
+.btn-goggle:hover {
+    border-color: var(--fc-btn-bg);
+    box-shadow: 0 0 0 2px var(--border);
+}*/

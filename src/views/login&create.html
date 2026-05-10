@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Purebas__css</title>
+</head>
+<body>
+    <div class="panel-left">
+        <div class="form-card-styles">
+            <section class="content-nav">
+                <header class ="container-nav">
+                    <div>
+                        <h1>Sign in to Kolm</h1>
+                    </div>
+                </header>
+            </section>
+            <hr class="divider sign-in" style="display: block;">
+                
+            </hr>
+            <section>
+                <form action="submit">
+                    <div class="form-card-molder">
+                        
+                        <label class="form-card-label" for="username">
+                            Username <span class="required"></span>
+                        </label>
+                            <input
+                            class="move-inputs"
+                            type="text"
+                            id="username"
+                            name="username"
+                            placeholder=""
+                            required
+                            value=""
+                            >
+                            <span class="error-message" aria-live="polite"></span>
+
+                        <br>
+                        <div>
+                        </div>
+                        <div class="form-card-molder">
+                        
+                        <label class="form-card-label" for="email">
+                            Email <span class="required"></span>
+                        </label>
+                            <input
+                            class="move-inputs"
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder=""
+                            required
+                            value=""
+                            >
+                            <span class="error-message" aria-live="polite"></span>
+                        <br>
+                        <div>
+                        </div>
+                        <div class="form-card-molder">
+                            
+                            <label class="form-card-label" for="password">
+                                Password <span class="required"></span>
+                            </label>
+                            <input
+                            class="move-inputs"
+                            type="text"
+                            id="password"
+                            name="password"
+                            required
+                            pattern="{0,9} {0,10}"
+                            value=""
+                            >
+                            <div class="form-card__seperator">
+                                <span>continue with</span>
+                            </div>
+                            
+                        <div>
+                        </div>
+                        <button style="display: block;" type="submit">Sign in</button>
+                </form>
+                </div>
+            </section>
+        </div>
+    </div>
+
+            <div class="panel-left">
+    <div class="panel-left-content">
+    <!--     Ilustración SVG de papeles apilados (equivalente a la imagen)-->
+        <div class="illustration">
+        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- Pila de papeles trasera -->
+            <rect x="30" y="85" width="135" height="90" rx="3" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5" transform="rotate(-6 97 130)"/>
+            <rect x="30" y="82" width="135" height="90" rx="3" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" transform="rotate(-3 97 127)"/>
+            <!-- Papel principal -->
+            <rect x="32" y="78" width="136" height="93" rx="3" fill="white" stroke="rgba(0,0,0,0.1)" stroke-width="1"/>
+            <!-- Encabezado del papel -->
+            <rect x="45" y="88" width="110" height="10" rx="2" fill="#e2e2e2"/>
+            <!-- Líneas del papel -->
+            <line x1="45" y1="108" x2="155" y2="108" stroke="#d0d0d0" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="45" y1="118" x2="145" y2="118" stroke="#d0d0d0" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="45" y1="128" x2="150" y2="128" stroke="#d0d0d0" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="45" y1="138" x2="140" y2="138" stroke="#d0d0d0" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="45" y1="148" x2="148" y2="148" stroke="#d0d0d0" stroke-width="1.5" stroke-linecap="round"/>
+            <line x1="45" y1="158" x2="135" y2="158" stroke="#d0d0d0" stroke-width="1.5" stroke-linecap="round"/>
+            <!-- Texto "TO DO LIST" -->
+            <text x="100" y="97" text-anchor="middle" font-family="serif" font-size="8" font-weight="700" fill="#555" letter-spacing="1">Porfolios</text>
+            <!-- Clip de carpeta arriba -->
+            <rect x="82" y="72" width="36" height="10" rx="5" fill="rgba(255,255,255,0.4)" stroke="rgba(255,255,255,0.5)" stroke-width="1.5"/>
+        </svg>
+        </div>
+    </div>
+
+</body>
+</html>

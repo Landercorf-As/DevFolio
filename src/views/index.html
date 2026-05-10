@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleP.css">
+    <title>My Website</title>
+</head>
+<body>
+
+    <section class="content-nav">
+        <header class ="container-nav">
+            <div>
+                <h1>Bienvenido a Profile Dev</h1>
+                <hr limit="1">
+            </div>
+        </header>
+    </section>
+    <section>
+        <div>
+            <label>Nombre:
+                <input type="text" name="name" placeholder="nombre" required>
+            </label>
+            <label>Mensaje:
+                <textarea name="message" readonly placeholder="Escribe tu mensaje aquí..." required></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+        </div>
+        <div>
+            <label>
+                <select name="pastel">
+                    <option value="chocolate">Chocolate</option>
+                    <option value="vainilla">Vainilla</option>
+                    <option value="fresa">Fresa</option>
+                </select>
+            </label>
+            <button type="button" onclick="alert('Hello, World!')">Click me!</button>
+            <input type="text" name="username" maxlength="20">
+            <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+        </div>
+        <br>
+        
+        <form action="/" method="post">
+            <fieldset>
+                <legend>Información de contacto</legend>
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required placeholder="example@example.com">
+                <label for="phone" style="display: block;">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+                <button type="submit">Enviar</button>
+            </fieldset>
+            <a href="mailto:asprillafabia@gmail.com">Enviame un correo</a>
+            <a href="tel:123-456-7890">llamame</a>
+            <fieldset>
+                <legend>estilacion:
+                    <label for="color">Elige tu color favorito:</label>
+                    <input type="color" id="color" name="color" value="#ff0000">
+                    <label>marca
+                        <input type="datetime-local" id="data" name="mark">
+                    </label>
+                </legend>
+            </fieldset>
+        </form>
+        
+        
+        <!--
+        <nav>
+            <a href="index.html">hello</a>
+            <a href="https://github.com/landercor" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="Services.html">Services</a>
+            <a href="Contact.html">Contact</a>
+        </nav>
+        <form action="/submit" method="post">
+            <input type="text" name="pastel" value="">
+            <input type="text" name="username" value="">
+            <input type="email" name="phone" value="" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="example@example.com">
+            <button type="submit">Enviar</button>
+            
+        </form>
+        -->
+    </section>
+    <section>
+        <h2>Preguntas Frecuentes</h2>
+        <div>
+            <details open>
+                <summary>que estudios tienes?</summary>
+                    <p>Texto descriptivo sobre los estudios. Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus.</p>
+            </details>
+        </div>
+        <details>
+            <summary>cuales son tus intereses?</summary>
+                <p>Texto descriptivo sobre los intereses.</p>
+        </details>
+        <details>
+            <summary>¿Qué te gusta hacer en tu tiempo libre?</summary>
+                <p>Texto descriptivo sobre los hobbies. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa, fugiat?</p>
+        </details>
+    </section>
+    
+    
+<!--
+    <section class="container-nav">
+        <header>
+            <div>
+                <h1>Bienvenido a mi sitio web</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Acerca de</a></li>
+                        <li><a href="#">Servicios</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </section>
+-->
+
+</body>
+<footer class="reservet">
+    <div class="container-reservet">
+    <p>&copy; 2024 Profile Dev. Todos los derechos reservados.</p>
+    <small>
+        <a href="help.html">help</a>
+        <a href="terms.html">Términos y condiciones</a>
+        <a href="privacy.html">Política de privacidad</a>
+        <a href="lenguaje">Lenguaje</a>
+    </small>
+    </div>
+</footer>
+</html>
